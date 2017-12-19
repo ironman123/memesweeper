@@ -34,6 +34,10 @@ MemeField::MemeField(int nMemes)
 	}
 }
 
+void MemeField::Draw(Graphics & gfx) const
+{
+}
+
 MemeField::Tile & MemeField::TileAt(const Vei2 & gridPos)
 {
 	return field[gridPos.y * width + gridPos.x];

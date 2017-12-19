@@ -1,4 +1,5 @@
 #pragma once
+#include "Graphics.h"
 
 class MemeField
 {
@@ -21,6 +22,7 @@ private:
 	};
 public:
 	MemeField(int nMemes);
+	void Draw(Graphics& gfx)const;
 private:
 	Tile & TileAt(const Vei2& gridPos);
 private:
